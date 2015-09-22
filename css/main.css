@@ -1,9 +1,14 @@
-body {
+body, .og-details p {
 	font-family: 'Montserrat', sans-serif;	
 }
 
-h1 {
+h1, .og-details h3, .og-details a {
 	font-family: 'Hind', sans-serif;
+}
+
+.og-details p {
+	font-size:12px;
+	line-height:19px;
 }
 
 .jumbotron {
