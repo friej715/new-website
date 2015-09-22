@@ -11,9 +11,8 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat|Hind' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="../favicon.ico">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="css/grid.css" />
-<link rel="stylesheet" type="text/css" href="css/main.css" />
-
+        <link rel="stylesheet" type="text/css" href="css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="js/modernizr.custom.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
@@ -35,88 +34,173 @@
         position: relative;
         top: -100%;
     }
+    
+    #tagline {
+        text-align: center;
+        font-size: 7vw;
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .blue {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+    
+    .child {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+    }
+    
+    .og-grid {
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+    
+    .og-close {
+        z-index: 1;
+    }
     </style>
     <div class="spacer s0"></div>
+    <div style="position:absolute;top:40%; z-index:1; width:100%">
+        <h1 id="tagline">Let's make delightful things.</h1></div>
     <div id="parallax1" class="parallaxParent">
-        <div style="background-image: url(../../img/example_parallax_bg1.png);"></div>
+        <div style="background-image: url(img/DOTS_BG.gif); background-size:100%"></div>
     </div>
     <div class="spacer s1">
         <div class="box2 blue">
-            <p>Content 1</p>
-            <a href="#" class="viewsource">view source</a>
+            <div class="child">
+                <p>My name is <span class="highlight">Jane Friedhoff</span>. I'm a creative technologist, game designer, and web developer. My work focuses on how interactive digital objects can create new, unusual, and surprising relationships between people.</p>
+                <p>I pick up new skills and programming languages like a katamari. Game design, creative coding, web development, teaching, production, and alternative interfaces are just a few capabilities I have in my toolbox.</p>
+                <p>I would describe myself as underslept and overexcited.</p>
+                <p>Have a project that requires code expertise, clever thinking, communication, collaboration, and tight deadlines? We should talk. Get in touch.</p>
+                <p>You can see my CV here.</p>
+            </div>
         </div>
     </div>
     <div class="spacer s0"></div>
     <div id="parallax2" class="parallaxParent">
-        <div style="background-image: url(img/game_sco_1.gif);"></div>
+        <div style="background-image: url(img/FACES_BG.gif); background-size:100%"></div>
     </div>
     <div class="spacer s1">
-        <div class="box2 blue">
-            <p>Content 2</p>
+        <div class="box2 blue" style="height:100%">
+            <div style="position:relative; height:300px; width:100%">
+                <div style="position:absolute; top:50%; left:50%; -webkit-transform:translate(-50%, -50%)">
+                    <p>Here are some of my favorite projects.</p>
+                </div>
+            </div>
             <div id="portfolio-grid">
-            <ul id="og-grid" class="og-grid">
-                                <li>
-                    <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
-                        <img src="img/thumbs/design_motf_8.png">
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
-                        <img src="img/thumbs/design_motf_8.png">
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
-                        <img src="img/thumbs/design_motf_8.png">
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
-                        <img src="img/thumbs/design_motf_8.png">
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
-                        <img src="img/thumbs/design_motf_8.png">
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
-                        <img src="img/thumbs/design_motf_8.png">
-                    </a>
-                </li>
-                                <li>
-                    <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
-                        <img src="img/thumbs/design_motf_8.png">
-                    </a>
-                </li>
-                <li>
-                    <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
-                        <img src="img/thumbs/design_motf_8.png">
-                    </a>
-                </li>
-                <!--  <li>
-                <a href="/web/20141006155234/http://www.kollabora.com" data-largesrc="img/code_kollabora_0.png" data-title="Kollabora User Recommendation" data-description="In 2013, I was a hackNY Fellow at Kollabora, a social platform for DIYers. During my time there, I helped develop a service that provides customized user and project recommendations, based on the current user's interests.">
-                    <img src="img/thumbs/code_kollabora_0.png" alt="img/2.jpg"/>
-                </a>
-            </li>-->
-            </ul>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul id="og-grid" class="og-grid">
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/design_madison_0.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/design_motf_8.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/game_sco_0.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/game_2ndAmend_0.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/game_vici_7.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/game_hermitcrab_7.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/game_storygoround_4.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/design_IBM_7.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/code_kollabora_0.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/screamemup_lg_logo.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/game_liminal_10.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/design_tsp_8.jpg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/code_clf_0.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/code_facets_0.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/paper_phys_0.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://web.archive.org/web/20141006155234/http://melaniecrean.com/newmc/?page_id=567" data-largesrc="img/design_motf_9.png" data-title="Memories Of The Future" data-description="Memories Of The Future is a location based cinema project based in the Hunts Point neighborhood of the South Bronx, using memories called back from the past to understand the nature of the present moment, and project a re-imagined version of that moment into the future. I am the lead visual/UX designer and co-programmer.">
+                                    <img src="img/thumbs/paper_twine_0.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-            <a href="#" class="viewsource">view source</a>
-        </div>
+        <span>     1</span>
+    </div>
     </div>
     <div class="spacer s0"></div>
     <div id="parallax3" class="parallaxParent">
-        <div style="background-image: url(../../img/example_parallax_bg3.png);"></div>
+        <div style="background-image: url(img/BEYONCE2_BG.gif); background-size:100%"></div>
     </div>
     <div class="spacer s2"></div>
-        <script src="js/grid.js"></script>
+    <script src="js/grid.js"></script>
     <script src="js/main.js"></script>
     <script>
     $(function() {
         Grid.init();
     });
+
+    $(document).resize(function() {
+
+
+    })
     </script>
     <script>
     // init controller
@@ -135,7 +219,6 @@
             y: "80%",
             ease: Linear.easeNone
         })
-        .addIndicators()
         .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -145,7 +228,6 @@
             y: "80%",
             ease: Linear.easeNone
         })
-        .addIndicators()
         .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -155,7 +237,6 @@
             y: "80%",
             ease: Linear.easeNone
         })
-        .addIndicators()
         .addTo(controller);
     </script>
 </body>
